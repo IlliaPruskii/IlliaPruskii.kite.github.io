@@ -23,7 +23,7 @@ let menuBurger = {
 		this.mobileMenu.classList.toggle('active_header_menu');
 	},
 }
-
+ 
 menuBurger.start();
 
 
