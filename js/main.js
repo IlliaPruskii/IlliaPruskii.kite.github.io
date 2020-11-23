@@ -5,23 +5,18 @@ let menuBurger = {
 	start: function(){
 		let that = this;
 		this.burger.addEventListener('click', function(e){
-			that.addBurgerClass(e);
+			that.activeMenu(e);
 		});
-		this.burger.addEventListener('click', function(e){
+		this.menuBackground.addEventListener('click', function(e){
 			that.addMobileMenuClass(e);
 		});
 	},
 
-	addBurgerClass: function(){
+	activeMenu: function(){
 		this.burger.classList.toggle('active_burger');
-	},
-
-	addMobileMenuClass: function(){
 		this.mobileMenu.classList.toggle('active_header_menu');
 	},
-	addMobileMenuClass: function(){
-		this.mobileMenu.classList.toggle('active_header_menu');
-	},
+	
 }
  
 menuBurger.start();
